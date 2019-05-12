@@ -80,9 +80,6 @@ if [ -n "${MINECRAFT_EULA:-""}" ]; then
   echo -n "-----> Accepting Minecraft EULA... "
   echo "eula=true" >> $BUILD_DIR/eula.txt
   echo "done"
-  echo -n "-----> Generating server.properties... "
-  curl -o server.properties -s -L "https://pastebin.com/raw/eh6HD0YX"
-  mv server.properties $BUILD_DIR/server.properties
 fi
 
 mkdir -p $BUILD_DIR/bin
